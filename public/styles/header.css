@@ -1,0 +1,21 @@
+header {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  background-color: thistle;
+}
+
+header h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+header img {
+  width: 180px;
+  height: 180px;
+}
