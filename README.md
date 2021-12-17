@@ -6,9 +6,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-![screen of desktop of the Tweeter]()
-![screen of mobile of the Tweeter]()
-![screen of added tweet in mobile mode]()
+![screen of desktop of the Tweeter](https://github.com/YunDobi/tweeter-template/blob/master/docs/desktop2.png)
+![screen of mobile of the Tweeter](https://github.com/YunDobi/tweeter-template/blob/master/docs/mobile_mode.png)
+![screen of added tweet in mobile mode](https://github.com/YunDobi/tweeter-template/blob/master/docs/mobile_added.png)
 
 
 ## Getting Started
