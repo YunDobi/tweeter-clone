@@ -1,15 +1,17 @@
 nav {
-  height: 120px;
+  position:fixed;
+  top: 0;
+  height: 80px;
   width: 100%;
-  background-color: #4056A1;
   font-family: 'Bungee';
   color: #ffffff;
   padding: 1.5em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
   z-index: 1;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  background-color: thistle;
 }
 
 .rightSide {
@@ -19,4 +21,18 @@ nav {
 #arrow {
   color: red;
   text-align: center;
+}
+
+#tweet {
+  font-size: 40px;
+}
+#Write {
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+    height: 120px;
+  }
 }
