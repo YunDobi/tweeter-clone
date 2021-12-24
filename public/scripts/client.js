@@ -1,6 +1,7 @@
 $(document).ready(function() {
   const $textArea = $("#tweet-text");
   const $error = $(".error");
+  const $counter = $(".counter");
 
   const randomIcons = () => {
     const icons = ["fas fa-cat", "fas fa-dog","fas fa-crow"];
@@ -65,6 +66,8 @@ $(document).ready(function() {
       return false;
     } else if ($textArea.val().length > 140) {
       $textArea.val("");
+      $counter[0].value = 140;
+      $counter.removeClass("red");
       $error.slideDown(400);
       return false;
     }
