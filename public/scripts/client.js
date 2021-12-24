@@ -60,17 +60,19 @@ $(document).ready(function() {
 
     //validation
     if ($textArea.val() === null || $textArea.val() === "") {
-      $error.slideDown("slow");
+      $textArea.val("");
+      $error.slideDown(400);
       return false;
     } else if ($textArea.val().length > 140) {
+      $textArea.val("");
       $error.slideDown(400);
       return false;
     }
-      
 
     $.post ("/tweets", $textArea.serialize(), function() {
       $error.hide();
       loadTweets();
+      $textArea.val("");
     });
   });
 
