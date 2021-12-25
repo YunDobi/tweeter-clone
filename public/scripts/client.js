@@ -1,6 +1,7 @@
 $(document).ready(function() {
   const $textArea = $("#tweet-text");
   const $error = $(".error");
+  const $errorText = $(".error-text");
   const $counter = $(".counter");
 
   const randomIcons = () => {
@@ -62,12 +63,14 @@ $(document).ready(function() {
     //validation
     if ($textArea.val() === null || $textArea.val() === "") {
       $textArea.val("");
+      $errorText.html("Can not submit empty value.");
       $error.slideDown(400);
       return false;
     } else if ($textArea.val().length > 140) {
       $textArea.val("");
       $counter[0].value = 140;
       $counter.removeClass("red");
+      $errorText.html("It is over 140 character already!");
       $error.slideDown(400);
       return false;
     }
