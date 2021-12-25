@@ -12,7 +12,7 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(tweetData) {
-    //avoid cross-site 
+    //avoid Cross-Site Scripting
     const escape = function (str) {
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
@@ -50,10 +50,10 @@ $(document).ready(function() {
     }
   };
 
+  //callback to the redner tweets after recieve the data from server
   const loadTweets = function() {
     $.get('/tweets')
       .then((data) => {
-        console.log(data);
         renderTweets(data);
       });
   };
@@ -63,7 +63,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     //validation
-    if ($textArea.val() === null || $textArea.val() === "") {
+    if ($textArea.val()) {
       $textArea.val("");
       $errorText.html("Can not submit empty value.");
       $error.slideDown(400);
@@ -77,6 +77,7 @@ $(document).ready(function() {
       return false;
     }
 
+    //successfully post of the tweets
     $.post ("/tweets", $textArea.serialize(), function() {
       $error.hide();
       loadTweets();
