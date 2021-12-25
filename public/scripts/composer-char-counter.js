@@ -4,6 +4,7 @@ $(document).ready(function() {
   const $wirte = $('#Write');
 
 
+  //counter limit
   $textArea.on('input', function() {
     const currentCount = 140 - ($(this).val().length);
     $counter[0].value = currentCount;
@@ -15,6 +16,7 @@ $(document).ready(function() {
     }
   });
 
+  //stretch work, show up the new-tweets
   $wirte.on("click", function() {
     if ($('.new-tweet').is(":visible")) {
       $('.new-tweet').hide("slow");

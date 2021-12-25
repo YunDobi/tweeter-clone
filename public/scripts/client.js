@@ -4,6 +4,7 @@ $(document).ready(function() {
   const $errorText = $(".error-text");
   const $counter = $(".counter");
 
+  //randomize the icon.
   const randomIcons = () => {
     const icons = ["fas fa-cat", "fas fa-dog","fas fa-crow"];
     let icon = icons[Math.floor(Math.random() * icons.length)];
@@ -11,6 +12,7 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(tweetData) {
+    //avoid cross-site 
     const escape = function (str) {
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
