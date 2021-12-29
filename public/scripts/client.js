@@ -63,7 +63,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     //validation
-    if ($textArea.val()) {
+    if ($textArea.val() === '') {
       $textArea.val("");
       $errorText.html("Can not submit empty value.");
       $error.slideDown(400);
