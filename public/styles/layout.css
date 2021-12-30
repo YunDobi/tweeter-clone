@@ -35,20 +35,25 @@ body {
 .toggle {
   margin: 0 -3%;
   margin-bottom: 2%;
-  padding: 3%;
+  padding: 2%;
+  padding-top: 1.75%;
+  padding-bottom: 1.75%;
   display: flex;
   position: fixed;
+  bottom: 2%;
   align-self: flex-end;
   justify-content: flex-end;
   border-radius: 50%;
   background-color: #f44336;
   color: white;
   border: none;
-  visibility: hidden;
 }
-.toggle:hover,
-.toggle:focus {
-  background-color: #F082AC;
+.toggle:hover {
+  background-color: darkred;
+}
+
+.hidden {
+  visibility: hidden;
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

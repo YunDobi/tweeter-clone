@@ -1,7 +1,8 @@
 $(document).ready(function() {
   const $textArea = $("#tweet-text"); // text area
   const $counter = $(".counter");
-  const $wirte = $('#Write');
+  const $wirte = $('.rightSide');
+  const $toggle = $('.toggle');
 
 
   //counter limit
@@ -24,6 +25,21 @@ $(document).ready(function() {
       $('.new-tweet').slideDown("slow");
     }
   });
+  
+  // toggle visiability
+  $(window).scroll(function() {
+    if ($(window).scrollTop() < 100) {
+      $toggle.addClass("hidden");
+    } else {
+      $toggle.removeClass("hidden");
+    }
+  });
+
+  //toggle to top
+  $toggle.on("click", function() {
+    window.scrollTo(0,0);
+  });
+  
 });
 
 
