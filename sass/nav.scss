@@ -1,9 +1,9 @@
 nav {
-  position: fixed;
+  position:fixed;
   top: 0;
   height: 80px;
   width: 100%;
-  font-family: "Bungee";
+  font-family: 'Bungee';
   color: #ffffff;
   padding: 1.5em;
   display: flex;
@@ -18,7 +18,6 @@ nav {
   display: flex;
   flex-direction: column;
 }
-
 #arrow {
   color: red;
   text-align: center;
@@ -27,7 +26,6 @@ nav {
 #tweet {
   font-size: 40px;
 }
-
 #Write {
   font-size: 15px;
 }
